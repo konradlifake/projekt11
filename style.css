@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+section {
+  border: 2px solid #080000;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+h2 {
+  margin-top: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  gap: 15px;
+}
+ul li {
+  padding: 5px 10px;
+  background: #ef5555;
+  border-radius: 4px;
+}
+.gallery {
+  width: 200px;
+  height: 200px;
+  margin: 10px 0;
+}
+#blokowy ul {
+  display: block;
+}
+
+#blokowy ul li {
+  display: inline-block;
+}
+
+#blokowy .gallery {
+  display: block;
+  width: max-content;
+}
+
+#blokowy .gallery img {
+  width: 90px;
+  height: 90px;
+  margin: 5px;
+  display: inline-block;
+}
+
+#blokowy form {
+  display: block;
+}
+
+#blokowy form input,
+#blokowy form button {
+  display: inline-block;
+  margin-right: 5px;
+}
+#lini ul {
+  display: inline;
+}
+#lini ul li {
+  display: inline;
+  margin-right: 15px;
+}
+#lini .gallery {
+  font-size: 0;
+}
+#lini .gallery img {
+  width: 90px;
+  height: 90px;
+  margin: 5px;
+  display: inline-block;
+}
+#lini form input,
+#lini form button {
+  display: inline;
+  margin-right: 5px;
+}
+#flexbox ul {
+  display: flex;
+  gap: 15px;
+}
+#flexbox ul li {
+  background: #26a0a9;
+  padding: 5px 10px;
+}
+#flexbox .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  gap: 10px;
+}
+#flexbox .gallery img {
+  width: 90px;
+  height: 90px;
+}
+#flexbox form {
+  display: flex;
+  gap: 10px;
+}
+#flexbox form input,
+#flexbox form button {
+  flex: 1;
+}
+#grid ul {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  gap: 15px;
+}
+#grid ul li {
+  background: #90c536;
+  padding: 5px 10px;
+}
+#grid .gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 90px);
+  grid-template-rows: repeat(2, 90px);
+  gap: 10px;
+  width: max-content;
+}
+#grid .gallery img {
+  width: 90px;
+  height: 90px;
+}
+#grid form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 400px;
+}
+#grid form button {
+  grid-column: span 1;
+}
